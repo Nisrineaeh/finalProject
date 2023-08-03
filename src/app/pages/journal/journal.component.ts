@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Technique } from 'src/app/models/technique';
 import { TechniqueService } from 'src/app/services/technique.service';
 
@@ -28,10 +28,30 @@ export class JournalComponent {
   lieuxOptions: string[] = ['','Domicile', 'Travail', 'Extérieur'];
   nombreOptions: string[] = ['','Seul', 'En groupe'];
 
-  addMessage(message:string):void{
+  @ViewChild('messageInput', {static: true}) messageInput!: ElementRef;
+  selectedTechnique: string = '';
+  selectedLieu: string = '';
+  selectedNombre: string = '';
+
+  addMessage(techniqueValue: string, lieuValue: string, nombreValue: string):void{
+    const message= this.messageInput.nativeElement.value
     if(message.trim() !== ''){
       this.message.push(message);
+      this.messageInput.nativeElement.value='';
+    console.log(this.messageInput);
+
+      this.selectedTechnique = techniqueValue;
+      this.selectedLieu = lieuValue;
+      this.selectedNombre = nombreValue;
     }
+    
+
   }
+
+  getTechName(techniqueId:number):string {
+    const selectedTechnique = this.techniques.find((technique) => technique.id === techniqueId)
+    return selectedTechnique ? selectedTechnique.name :'';
+  }
+
 
 }

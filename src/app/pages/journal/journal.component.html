@@ -1,12 +1,17 @@
-<div><h3>Tableau de Bord - Journal de Méditation</h3>
-<h5>Messages enregistrés :</h5>
-<ul>
-    <li *ngFor="let msg of message">
-        <p>Votre messgae : {{ msg }}</p>
-    </li>
-</ul>
+<div>
+    <h3>Tableau de Bord - Journal de Méditation</h3>
+    <h5>Messages enregistrés :</h5>
+    <ul>
+        <li *ngFor="let msg of message">
+            <p>
+                Sélection : <br>
+                 Technique : {{ selectedTechnique }}, Lieu : {{ selectedLieu }}, Nombre : {{ selectedNombre
+                }}
+            </p>
+            <p>Votre message :<br> {{ msg }}</p>
+        </li>
+    </ul>
 </div>
-
 
 
 <div class="content">
@@ -14,7 +19,7 @@
 
     <div class="option">
         <label>Séance : </label>
-        <select>
+        <select #techniqueSelect>
             <option *ngFor="let technique of techniques" [value]="technique.id">
                 {{ technique.name }}
             </option>
@@ -23,7 +28,7 @@
 
     <div class="option">
         <label>Lieu :</label>
-        <select>
+        <select #lieuSelect>
             <option *ngFor="let lieu of lieuxOptions" [value]="lieu">
                 {{ lieu }}
             </option>
@@ -32,14 +37,16 @@
 
     <div class="option">
         <label>Seul(e) ? :</label>
-        <select>
+        <select #nombreSelect>
             <option *ngFor="let nombre of nombreOptions" [value]="nombre">
                 {{ nombre }}
             </option>
         </select>
     </div>
 
-    <div><textarea placeholder="Écrivez votre entrée ici..."></textarea></div>
+    <div>
+        <textarea #messageInput placeholder="Écrivez votre entrée ici..."></textarea>
+    </div>
 
-    <div><button class="btn" (click)="addMessage(message.value)">Ajouter une nouvelle entrée</button></div>
+    <div><button class="btn" (click)="addMessage(techniqueSelect.value, lieuSelect.value, nombreSelect.value)">Ajouter une nouvelle entrée</button></div>
 </div>
