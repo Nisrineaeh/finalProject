@@ -10,6 +10,8 @@ import { PageProfilComponent } from './pages/page-profil/page-profil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { JournalComponent } from './pages/journal/journal.component';
 
+import{HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { JournalComponent } from './pages/journal/journal.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
