@@ -1,1 +1,21 @@
-<p>page-profil works!</p>
+<div *ngFor="let tech of matech" class="plant-list">
+  <div class="card" style="width: 18rem">
+    <div class="container- techniques">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{tech.images}}">
+            <div class="card-body">
+                <h5 class="title">{{tech.name}}</h5>
+                <p class="text">Cette technique est la numéro {{tech.id}} du catalogue, elle est decrite comme :
+                    {{tech.description}} Elle vous projetera dans un univers {{tech.ambiance}}
+                    pendant
+                    {{tech.duration}}.</p>
+    
+    
+            </div>
+
+
+
+
+
+    </div>
+</div>
