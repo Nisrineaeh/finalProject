@@ -1,0 +1,32 @@
+/* h3{
+    margin-top: 10px;
+    margin-left: 50px;;
+}
+.entry{
+    display: flex;
+    justify-content: center;
+    border: 10px solid black;
+    width: 100%;
+    
+} */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option{
+    margin-bottom: 10px;
+}
+
+.btn{
+    border: 2px solid black;
+
+}
+
+textarea{
+    width: 800px;
+    height:400px;
+}

@@ -10,7 +10,9 @@ import { PageProfilComponent } from './pages/page-profil/page-profil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { JournalComponent } from './pages/journal/journal.component';
 
-import{HttpClientModule} from '@angular/common/http'
+import{HttpClientModule} from '@angular/common/http';
+import { TechListComponent } from './components/tech-list/tech-list.component';
+import { CardComponent } from './components/card/card.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import{HttpClientModule} from '@angular/common/http'
     PageMyTechniqueComponent,
     PageProfilComponent,
     PageNotFoundComponent,
-    JournalComponent
+    JournalComponent,
+    TechListComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,4 @@
 <div class="container">
     <h1 class="title">Univers de méditation</h1>
-    <div class="container-technique">
-        <ul>
-            <li *ngFor="let plant of techniqueToDisplay">{{ plant.name }}</li>
-        </ul>
-    </div>
+<app-tech-list [techniqueRecupDeMyTech]="techniqueToDisplay"></app-tech-list>
 </div>
-
