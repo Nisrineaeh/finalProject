@@ -8,6 +8,7 @@ import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageMyTechniqueComponent } from './pages/page-my-technique/page-my-technique.component';
 import { PageProfilComponent } from './pages/page-profil/page-profil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { JournalComponent } from './pages/journal/journal.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     PageHomeComponent,
     PageMyTechniqueComponent,
     PageProfilComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    JournalComponent
   ],
   imports: [
     BrowserModule,
