@@ -12,7 +12,7 @@
 }
 
 .btn{
-    border: 2px solid black;
+    border: 2px solid #B54574;
 
 }
 
@@ -45,4 +45,12 @@ h5{
 
 .rep{
     font-weight: bolder;
+}
+
+button{
+    color: #B54574;
+}
+button:hover{
+    background-color: #B54574;
+    color: white;
 }

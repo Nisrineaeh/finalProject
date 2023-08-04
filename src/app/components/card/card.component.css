@@ -8,7 +8,7 @@
 
 .card{
     margin-bottom: 50px;
-    border: 1px solid #E4D9FF;
+    border: 1px solid #B54574;
 }
 
 h3{
@@ -18,8 +18,11 @@ h3{
     color:#6B2D5C;
 
 }
-
+button{
+    color: #B54574;
+}
 button:hover{
-    background-color: #E4D9FF;
+    background-color: #B54574;
+    color: white;
 }
 
