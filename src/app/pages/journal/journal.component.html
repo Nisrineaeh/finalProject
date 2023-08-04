@@ -3,12 +3,11 @@
     <h5>Messages enregistrés :</h5>
     <ul>
         <li *ngFor="let msg of message">
-            <p>
-                Votre ressentis qu'en à la <br>
-                 Séance : {{ selectedTechnique }}, Lieu : {{ selectedLieu }}, Nombre : {{ selectedNombre
-                }}
+            <p class="rep">
+                Votre ressentis qu'en à la Séance :</p>
+               <p>  {{ selectedTechnique }}, Lieu : {{ selectedLieu }}, Nombre : {{ selectedNombre}}
             </p>
-            <p>Votre message :<br> {{ msg }}</p>
+            <p class="rep">Votre message :</p><p>{{ msg }}</p>
         </li>
     </ul>
 </div>
@@ -20,7 +19,7 @@
     <div class="option">
         <label>Séance : </label>
         <select #techniqueSelect>
-            <option *ngFor="let technique of techniques" [value]="technique.id">
+            <option *ngFor="let technique of techniques" [value]="technique.name">
                 {{ technique.name }}
             </option>
         </select>

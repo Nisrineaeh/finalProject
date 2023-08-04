@@ -30,3 +30,19 @@ h3{
 label{
     margin-right: 10px;
 }
+
+li{
+    list-style-type: none;
+}
+
+label{
+    color:#7C0033;
+}
+
+h5{
+    color:#b54574;
+}
+
+.rep{
+    font-weight: bolder;
+}
