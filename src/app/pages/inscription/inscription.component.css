@@ -1,0 +1,43 @@
+li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color:#7C0033;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+    color: #b54574;
+}
+
+.btn{
+    border: solid 1px #b54574;
+    color: #b54574;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    background-color: #b54574;
+    color: white;
+}
+
+label{
+    color:#7C0033
+}
+
+#passwordHelpBlock{
+    color: #b54574;
+}

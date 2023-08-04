@@ -5,6 +5,8 @@ import { PageMyTechniqueComponent } from './pages/page-my-technique/page-my-tech
 import { JournalComponent } from './pages/journal/journal.component';
 import { PageProfilComponent } from './pages/page-profil/page-profil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ConnexionComponent } from './pages/connexion/connexion.component';
+import { InscriptionComponent } from './pages/inscription/inscription.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
@@ -12,6 +14,8 @@ const routes: Routes = [
   { path: 'guide', component: PageMyTechniqueComponent },
   { path: 'journal', component: JournalComponent },
   { path: 'profil', component: PageProfilComponent },
+  { path:'connexion', component: ConnexionComponent},
+  { path: 'inscription', component: InscriptionComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
