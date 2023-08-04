@@ -14,8 +14,33 @@ h3{
     display: flex;
     justify-content: center;
     color: #7C0033;
+    margin: 20px;
 }
 
 label{
     color: #b54574;
+}
+
+.btn{
+    border: solid 1px #b54574;
+    color: #b54574;
+    margin-bottom: 20px;
+
+}
+.btn:hover{
+    background-color: #b54574;
+    color: white;
+} 
+
+li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
 }

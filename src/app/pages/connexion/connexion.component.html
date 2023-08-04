@@ -1,20 +1,25 @@
 <h3>Vous connecter</h3>
 
-<div class="mb-3 center" >
-    <label for="exampleFormControlInput1" class="form-label">Votre adresse mail ou pseudo</label>
-    <input type="email" class="form-control width" id="exampleFormControlInput1" placeholder="votremail@exemple.com">
-</div>
 
-<div class="row g-3 align-items-center center">
-    <div class="col-auto">
-        <label for="inputPassword6" class="col-form-label">Mot de passe</label>
-  
-    
-        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  
-    
-        <span id="passwordHelpInline" class="form-text">
-            Entre 5 et 15 caractères.
-        </span>
+
+<form action="localhost:8080" method="get">
+    <ul>
+        <li>
+            <label for="nom">Votre Email</label>
+            <input type="email" id="exampleFormControlInput1" name="utilisateur_nom" class="form-control" />
+        </li>
+
+        <li>
+            <label for="mot_de_passe">Votre mot de passe </label>
+            <input type="text" id="mot_de_passe" name="utilisateur_mot_de_passe" class="form-control" />
+            <div id="passwordHelpBlock" class="form-text">
+                Votre mot de passe doit contenir entre 8-20 caractères.
+            </div>
+        </li>
+    </ul>
+
+    <div class="button">
+        <button type="submit" class="btn"> Se connecter</button>
     </div>
-</div>
+
+</form>

@@ -14,7 +14,8 @@ import{HttpClientModule} from '@angular/common/http';
 import { TechListComponent } from './components/tech-list/tech-list.component';
 import { CardComponent } from './components/card/card.component';
 import { ConnexionComponent } from './pages/connexion/connexion.component';
-import { InscriptionComponent } from './pages/inscription/inscription.component'
+import { InscriptionComponent } from './pages/inscription/inscription.component';
+import { ArticleComponent } from './components/article/article.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
     TechListComponent,
     CardComponent,
     ConnexionComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
