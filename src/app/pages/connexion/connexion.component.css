@@ -1,3 +1,21 @@
 .width{
     width:25%
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: #7C0033;
+}
+
+label{
+    color: #b54574;
+}
