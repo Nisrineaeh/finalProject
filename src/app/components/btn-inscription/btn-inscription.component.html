@@ -2,20 +2,13 @@
   <div class="content">
     <h1>Bienvenue sur notre site</h1>
     <p>Découvrez nos services incroyables</p>
-    <ul>
+    <ul class="left-align">
       <li *ngFor="let technique of techniques">{{ technique.name }}</li>
     </ul>
 
-    <button class="btn" [routerLink]="['/redirect']">Go</button>
+    <!-- <button class="btn center" [routerLink]="['/redirect']">Go</button> --><div class="center">
+  <button class="btn" [routerLink]="['/redirect']">Go</button>
+</div>
   </div>
 </div>
 
-<div class="list">
-  <h3>Dans des experiences d'immertion de techniques de méditation</h3>
-  <ul>
-    <li *ngFor="let technique of techniques">{{ technique.name }}</li>
-  </ul>
-</div>
-<div class="center">
-  <button class="btn" [routerLink]="['/connexion']">Se connecter</button>
-</div>
