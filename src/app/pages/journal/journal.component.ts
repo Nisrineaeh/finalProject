@@ -15,6 +15,10 @@ export class JournalComponent {
   ngOnInit() {
     // Chargez les techniques de méditation lors de l'initialisation du composant
     this.loadMeditationTechniques();
+    const messageStocke = localStorage.getItem('messages');
+    if(messageStocke){
+      this.message = JSON.parse(messageStocke);
+    }
   }
 
   loadMeditationTechniques() {
@@ -45,6 +49,8 @@ export class JournalComponent {
       this.message.push(newMessage);
       this.messageInput.nativeElement.value='';
     console.log(this.messageInput);
+
+      localStorage.setItem('messages', JSON.stringify(this.message));
     }
     
 

@@ -1,8 +1,12 @@
 h1{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    padding: 20px;
     margin-bottom: 50px;
     color:#6B2D5C;
+
 }
 
+*{
+     background-color: #FDECEF;
+}

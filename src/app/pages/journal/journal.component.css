@@ -18,7 +18,7 @@
 
 textarea{
     width: 800px;
-    height:400px;
+    height:200px;
 }
 
 h3{
@@ -53,4 +53,9 @@ button{
 button:hover{
     background-color: #B54574;
     color: white;
+}
+
+.ressentis{
+    border: 1px solid black;
+    width: auto;
 }

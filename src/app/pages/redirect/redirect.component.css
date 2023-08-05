@@ -1,7 +1,10 @@
-.container {
+.choix {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #FDECEF;
+  margin: 0px;
+
 }
 
 .middle {
@@ -13,4 +16,4 @@
 app-connexion, app-inscription{
     flex-grow: 1;
     margin: 10px;
-}
+} 

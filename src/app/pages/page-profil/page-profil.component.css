@@ -17,7 +17,7 @@
 h3{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    padding: 20px;
     color:#6B2D5C;
 
 }
@@ -27,8 +27,12 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 100px;color: #b54574;
+    margin: 100px;
 }
 
 
 
+*{
+
+    background-color: #FDECEF;
+}
