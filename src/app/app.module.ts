@@ -15,7 +15,9 @@ import { TechListComponent } from './components/tech-list/tech-list.component';
 import { CardComponent } from './components/card/card.component';
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
-import { ArticleComponent } from './components/article/article.component'
+import { ArticleComponent } from './components/article/article.component';
+import { BtnInscriptionComponent } from './components/btn-inscription/btn-inscription.component';
+import { NoteComponent } from './components/note/note.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ArticleComponent } from './components/article/article.component'
     CardComponent,
     ConnexionComponent,
     InscriptionComponent,
-    ArticleComponent
+    ArticleComponent,
+    BtnInscriptionComponent,
+    NoteComponent
   ],
   imports: [
     BrowserModule,

@@ -6,9 +6,9 @@
         <li *ngFor="let msg of message">
             <p class="rep">
                 Votre ressentis qu'en à la Séance :</p>
-               <p>  {{ selectedTechnique }}, Lieu : {{ selectedLieu }}, Nombre : {{ selectedNombre}}
+               <p>  {{ msg.technique }}, Lieu : {{ msg.lieu }}, Nombre : {{ msg.nombre}}
             </p>
-            <p class="rep">Votre message :</p><p>{{ msg }}</p>
+            <p class="rep">Votre message :</p><p>{{ msg.message }}</p>
         </li>
     </ul></div>
 </div>

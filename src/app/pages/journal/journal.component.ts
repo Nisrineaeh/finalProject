@@ -9,7 +9,7 @@ import { TechniqueService } from 'src/app/services/technique.service';
 })
 export class JournalComponent {
   techniques!: Technique[];
-  message: string[] = [];
+  message: any[] = [];
   constructor(private techniquesService: TechniqueService) { }
 
   ngOnInit() {
@@ -36,13 +36,15 @@ export class JournalComponent {
   addMessage(techniqueValue: string, lieuValue: string, nombreValue: string):void{
     const message= this.messageInput.nativeElement.value
     if(message.trim() !== ''){
-      this.message.push(message);
+      const newMessage = {
+        technique: techniqueValue,
+        lieu: lieuValue,
+        nombre: nombreValue,
+        message: message
+      };
+      this.message.push(newMessage);
       this.messageInput.nativeElement.value='';
     console.log(this.messageInput);
-
-      this.selectedTechnique = techniqueValue;
-      this.selectedLieu = lieuValue;
-      this.selectedNombre = nombreValue;
     }
     
 
