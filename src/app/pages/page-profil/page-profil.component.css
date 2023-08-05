@@ -27,5 +27,8 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 100px;
+    margin: 100px;color: #b54574;
 }
+
+
+

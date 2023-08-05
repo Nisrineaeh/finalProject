@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle {
+  margin: 0 10px; /* Ajustez la marge selon vos préférences */
+  font-size: 24px; /* Ajustez la taille de la police selon vos préférences */
+  color:#b54574;
+}
+
+app-connexion, app-inscription{
+    flex-grow: 1;
+    margin: 10px;
+}

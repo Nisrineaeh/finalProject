@@ -17,7 +17,8 @@ import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { ArticleComponent } from './components/article/article.component';
 import { BtnInscriptionComponent } from './components/btn-inscription/btn-inscription.component';
-import { NoteComponent } from './components/note/note.component'
+import { NoteComponent } from './components/note/note.component';
+import { RedirectComponent } from './pages/redirect/redirect.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NoteComponent } from './components/note/note.component'
     InscriptionComponent,
     ArticleComponent,
     BtnInscriptionComponent,
-    NoteComponent
+    NoteComponent,
+    RedirectComponent
   ],
   imports: [
     BrowserModule,

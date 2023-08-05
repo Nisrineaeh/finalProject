@@ -7,6 +7,7 @@ import { PageProfilComponent } from './pages/page-profil/page-profil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
+import { RedirectComponent } from './pages/redirect/redirect.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'profil', component: PageProfilComponent },
   { path:'connexion', component: ConnexionComponent},
   { path: 'inscription', component: InscriptionComponent },
+  {path:'redirect', component: RedirectComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 

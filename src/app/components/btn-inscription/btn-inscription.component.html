@@ -1,6 +1,21 @@
-<div class="launding"><h1>Vivez votre plus belle expérience</h1>
-    
-    <div class="list"><h3>Dans des experiences d'immertion de techniques de méditation </h3>
-    <ul><li *ngFor="let technique of techniques">{{technique.name}}</li>
-    </ul></div>
-    <div class="center"><button class="btn" [routerLink]="['/connexion']">Se connecter</button></div></div>
+<div class="landing-page">
+  <div class="content">
+    <h1>Bienvenue sur notre site</h1>
+    <p>Découvrez nos services incroyables</p>
+    <ul>
+      <li *ngFor="let technique of techniques">{{ technique.name }}</li>
+    </ul>
+
+    <button class="btn" [routerLink]="['/redirect']">Go</button>
+  </div>
+</div>
+
+<div class="list">
+  <h3>Dans des experiences d'immertion de techniques de méditation</h3>
+  <ul>
+    <li *ngFor="let technique of techniques">{{ technique.name }}</li>
+  </ul>
+</div>
+<div class="center">
+  <button class="btn" [routerLink]="['/connexion']">Se connecter</button>
+</div>
