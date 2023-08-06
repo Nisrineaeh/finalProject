@@ -30,7 +30,9 @@ export class InscriptionComponent {
       complete: () => {
         // Code à exécuter lorsque l'Observable est terminé (optionnel)
       },
-    });
+
+    })
+    alert('Ca fonctionne !');
   }
 
 
