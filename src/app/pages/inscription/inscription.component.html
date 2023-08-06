@@ -1,27 +1,27 @@
 <h3>Pas encore inscris ?</h3>
 <h5>Formulaire d'inscription</h5>
 
-<form action="localhost:8080" method="post">
+<form (ngSubmit)="onSubmit()">
     <ul>
         <li>
             <label for="nom">Votre Nom :</label>
-            <input type="text" id="nom" name="utilisateur_nom" class="form-control"/>
+            <input type="text" id="nom" name="utilisateur_nom" class="form-control"  [(ngModel)]="utilisateur.nom"/>
         </li>
         <li>
             <label for="prenom">Votre prénom :</label>
-            <input type="text" id="prenom" name="utilisateur_prenom" class="form-control"/>
+            <input type="text" id="prenom" name="utilisateur_prenom" class="form-control" [(ngModel)]="utilisateur.prenom"/>
         </li>
         <li>
             <label for="username">Votre pseudo :</label>
-            <input type="text" id="username" name="utilisateur_username" class="form-control"/>
+            <input type="text" id="username" name="utilisateur_username" class="form-control" [(ngModel)]="utilisateur.username"/>
         </li>
         <li>
             <label for="email">Votre émail :</label>
-            <input type="email" id="email" name="utilisateur_email" class="form-control" placeholder="cheminverslapaix@exemple.com"/>
+            <input type="email" id="email" name="utilisateur_email" class="form-control" placeholder="cheminverslapaix@exemple.com" [(ngModel)]="utilisateur.email"/>
         </li>
         <li>
             <label for="mot_de_passe">Votre mot de passe :</label>
-            <input type="text" id="mot_de_passe" name="utilisateur_mot_de_passe" class="form-control"/>
+            <input type="text" id="mot_de_passe" name="utilisateur_mot_de_passe" class="form-control" [(ngModel)]="utilisateur.mot_de_passe"/>
             <div id="passwordHelpBlock" class="form-text">
                 Votre mot de passe doit contenir entre 8-20 caractères.
             </div>

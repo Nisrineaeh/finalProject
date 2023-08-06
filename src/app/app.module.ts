@@ -19,6 +19,7 @@ import { ArticleComponent } from './components/article/article.component';
 import { BtnInscriptionComponent } from './components/btn-inscription/btn-inscription.component';
 import { NoteComponent } from './components/note/note.component';
 import { RedirectComponent } from './pages/redirect/redirect.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { RedirectComponent } from './pages/redirect/redirect.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
