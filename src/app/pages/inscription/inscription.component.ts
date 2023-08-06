@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Utilisateur } from 'src/app/models/utilisateur';
 import { UtilisateursService } from 'src/app/services/utilisateurs.service';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { ModalInscriptionComponent } from 'src/app/components/modal-inscription/modal-inscription.component';
+
 
 @Component({
   selector: 'app-inscription',
@@ -17,7 +20,7 @@ export class InscriptionComponent {
     date: new Date(),
   };
 
-  constructor(private utilisateurService: UtilisateursService){}
+  constructor(private utilisateurService: UtilisateursService, public modalService: BsModalService){}
 
   onSubmit(){
     this.utilisateurService.inscription(this.utilisateur).subscribe({
@@ -32,8 +35,20 @@ export class InscriptionComponent {
       },
 
     })
-    alert('Ca fonctionne !');
-  }
 
+
+
+    
+  }
+  
+  
+  openModal(){
+    this.modalService.show(ModalInscriptionComponent, {
+      class: 'modal-dialog-centered',
+      initialState:{
+        //passe de donnée initial à la fenetre modal
+      }
+    });
+  }
 
 }

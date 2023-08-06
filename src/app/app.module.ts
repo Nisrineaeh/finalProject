@@ -21,6 +21,9 @@ import { NoteComponent } from './components/note/note.component';
 import { RedirectComponent } from './pages/redirect/redirect.component'
 import { FormsModule } from '@angular/forms';
 
+import { ModalModule} from 'ngx-bootstrap/modal';
+import { ModalInscriptionComponent } from './components/modal-inscription/modal-inscription.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,13 +40,15 @@ import { FormsModule } from '@angular/forms';
     ArticleComponent,
     BtnInscriptionComponent,
     NoteComponent,
-    RedirectComponent
+    RedirectComponent,
+    ModalInscriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
