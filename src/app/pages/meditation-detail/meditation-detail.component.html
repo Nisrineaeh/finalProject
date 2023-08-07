@@ -10,7 +10,7 @@
 
 <p>{{meditations.name}}</p> -->
 
-<div *ngIf="meditations">
+<div *ngIf="meditations" class="meditation-details">
     <img [src]="meditations.images" class="card-img-top">
     <div class="card-body">
         <h5 class="title">{{ meditations.name }}</h5>
@@ -19,6 +19,9 @@
             {{ meditations.description }} Elle vous projettera dans un univers {{ meditations.ambiance }} pendant
             {{ meditations.duration }}.
         </p>
+        <app-chronometre (startClicked)="onStartClicked()" 
+    (stopClicked)="onStopClicked()" 
+    (resetClicked)="onResetClicked()"></app-chronometre>
         <audio controls>
             <source [src]="meditations.audio" type="audio/mp3">
         </audio>

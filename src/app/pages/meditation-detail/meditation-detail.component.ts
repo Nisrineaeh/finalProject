@@ -25,6 +25,21 @@ export class MeditationDetailComponent implements OnInit{
       })
     }
   }
+
+  isChronoRunning: boolean = false;
+
+  onStartClicked(): void {
+    this.isChronoRunning = true;
+  }
+
+  onStopClicked(): void {
+    this.isChronoRunning = false;
+  }
+
+  onResetClicked(): void {
+    this.isChronoRunning = false;
+    // Réinitialiser les valeurs du chronomètre si nécessaire
+  }
 }
 
 

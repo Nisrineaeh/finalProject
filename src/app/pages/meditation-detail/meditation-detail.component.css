@@ -5,6 +5,9 @@
 .card-img-top {
   flex: 1;
   object-fit: cover;
+  width: 100%;
+  max-height: calc(108vh - 108px);
+
 }
 
 .card-body {

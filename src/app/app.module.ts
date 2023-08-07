@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import { ModalModule} from 'ngx-bootstrap/modal';
 import { ModalInscriptionComponent } from './components/modal-inscription/modal-inscription.component';
 import { MeditationDetailComponent } from './pages/meditation-detail/meditation-detail.component';
+import { ChronometreComponent } from './components/chronometre/chronometre.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { MeditationDetailComponent } from './pages/meditation-detail/meditation-
     NoteComponent,
     RedirectComponent,
     ModalInscriptionComponent,
-    MeditationDetailComponent
+    MeditationDetailComponent,
+    ChronometreComponent
   ],
   imports: [
     BrowserModule,

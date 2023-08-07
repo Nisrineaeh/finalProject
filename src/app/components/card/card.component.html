@@ -6,8 +6,8 @@
                         <p class="text">Cette technique est la numéro {{uneTechAAfficher.id}} du catalogue, elle est decrite comme :
                             {{uneTechAAfficher.description}} Elle vous projetera dans un univers {{uneTechAAfficher.ambiance}} pendant
                             {{uneTechAAfficher.duration}}.</p>
-                            <audio controls><source src="{{uneTechAAfficher.audio}}" type="audio/mp3"></audio>
-                        <button href="#" class="btn btn-outline" (click)="OnTechSelected(uneTechAAfficher)" [routerLink]="['/meditation', uneTechAAfficher.id]">Ajouter à son profil</button>
+                            <!-- <audio controls><source src="{{uneTechAAfficher.audio}}" type="audio/mp3"></audio> -->
+                        <button href="#" class="btn btn-outline" (click)="OnTechSelected(uneTechAAfficher)" [routerLink]="['/meditation', uneTechAAfficher.id]">Commencer la méditation</button>
 </div>
 
 
