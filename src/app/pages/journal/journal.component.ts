@@ -10,6 +10,7 @@ import { TechniqueService } from 'src/app/services/technique.service';
 export class JournalComponent {
   techniques!: Technique[];
   message: any[] = [];
+
   constructor(private techniquesService: TechniqueService) { }
 
   ngOnInit() {
@@ -60,6 +61,8 @@ export class JournalComponent {
     const selectedTechnique = this.techniques.find((technique) => technique.id === techniqueId)
     return selectedTechnique ? selectedTechnique.name :'';
   }
+
+
 
 
 }

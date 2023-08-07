@@ -49,47 +49,21 @@ export class ChronometreComponent{
   twoDigits(value: number): string {
     return value < 10 ? `0${value}` : `${value}`;
   }
-  // ngOnInit(): void {
-  //   this.timer = setInterval(() => {
-  //     this.seconds++;
-  //     this.formattedTime = this.formatTime(this.seconds);
-  //   }, 1000);
-  // }
 
-  // ngOnDestroy(): void {
-  //   clearInterval(this.timer);
-  // }
-
-  // private formatTime(totalSeconds: number): string {
-  //   const hours = Math.floor(totalSeconds / 3600);
-  //   const minutes = Math.floor((totalSeconds % 3600) / 60);
-  //   const seconds = totalSeconds % 60;
-  //   return `${this.padZero(hours)}:${this.padZero(minutes)}:${this.padZero(seconds)}`;
-  // }
-
-  // private padZero(value: number): string {
-  //   return value.toString().padStart(2, '0');
-  // }
-
-  // @Output() startClicked = new EventEmitter<void>();
-  // @Output() stopClicked = new EventEmitter<void>();
-  // @Output() resetClicked = new EventEmitter<void>();
+  @Output() recordingTimes: number[]=[];
  
+  recordingTime(){
+    if(this.isRunning){
+      this.recordingTimes.push(this.elapsedTime);
+    }
+  }
 
-  // onStartClick(): void{
-  //   this.startClicked.emit();
-  // }
+  getFormattedTimes(time: number): string {
+    const hours = Math.floor(time / 3600);
+    const minutes = Math.floor((time % 3600) / 60);
+    const seconds = time % 60;
 
-  // onStopClick():void{
-  //   this.stopClicked.emit();
-  // }
-
-  // onResetClick(): void{
-  //   this.stopClicked.emit();
-  //   this.seconds = 0;
-  //   this.formattedTime = this.formatTime(this.seconds);
-  //   this.resetClicked.emit();
-  // }
-
+    return `${this.twoDigits(hours)}:${this.twoDigits(minutes)}:${this.twoDigits(seconds)}`;
+  }
   
 }
