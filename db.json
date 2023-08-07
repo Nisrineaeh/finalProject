@@ -6,7 +6,8 @@
         "description":
           "Méditation pour trouver la paix intérieure et l'harmonie avec la nature.",
         "duration": "15 minutes",
-        "images": "/assets/serenité.jpg"
+        "images": "/assets/serenité.jpg",
+        "audio":"/assets/audio/Serenité.mp3"
       },
       {
         "id": 2,

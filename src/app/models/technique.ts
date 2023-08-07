@@ -5,4 +5,5 @@ export interface Technique {
     description: string;
     duration: number;
     images: string;
+    audio:string;
 }
