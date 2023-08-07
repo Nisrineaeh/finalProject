@@ -7,19 +7,13 @@
     
 }
 
-.card{
-    margin-bottom: 50px;
-    border: 1px solid #E4D9FF;
-    margin-right: 50px;
-
-}
 
 h3{
     display: flex;
     justify-content: center;
     padding: 20px;
     color:var(--titre-font-color);
-
+    
 }
 
 ul{
@@ -33,6 +27,12 @@ ul{
 
 
 *{
-
+    
     background-color: var(--bgcolor);
+}
+.card{
+    margin-bottom: 50px;
+    border: 1px solid #E4D9FF;
+    margin-right: 50px;
+
 }

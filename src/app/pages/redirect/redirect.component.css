@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FDECEF;
+  background-color: var(--bgcolor);
   margin: 0px;
 
 }
@@ -10,7 +10,7 @@
 .middle {
   margin: 0 10px; /* Ajustez la marge selon vos préférences */
   font-size: 24px; /* Ajustez la taille de la police selon vos préférences */
-  color:#b54574;
+  color:var(--font-color);
 }
 
 app-connexion, app-inscription{

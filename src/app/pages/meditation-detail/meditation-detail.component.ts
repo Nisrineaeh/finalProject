@@ -40,6 +40,10 @@ export class MeditationDetailComponent implements OnInit{
     this.isChronoRunning = false;
     // Réinitialiser les valeurs du chronomètre si nécessaire
   }
+
+  //methode pour mot clefs intervalle 5secondes
+
+
 }
 
 

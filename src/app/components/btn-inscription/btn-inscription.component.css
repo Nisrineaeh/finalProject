@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #B1EDE8;
+    color: var(--font-color);
     font-family: Arial, sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
 h1 {
     font-size: 48px;
     margin-bottom: 40px;
-    color: #B54574;
+    color: var(--titre-font-color);
 }
 
 p {
@@ -55,8 +55,8 @@ p {
 
   
 button:hover{
-    background-color: #B54574;
-    color: #B1EDE8;
+    background-color: var(--font-color);
+    color: white;
 }
 
 

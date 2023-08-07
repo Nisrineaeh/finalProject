@@ -6,4 +6,5 @@ export interface Technique {
     duration: number;
     images: string;
     audio:string;
+    mot_clefs: string[];
 }

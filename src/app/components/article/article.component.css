@@ -2,11 +2,6 @@
   margin-top: 50px;
 }
 
-h2 {
-  color: #007bff;
-  margin-bottom: 20px;
-}
-
 p {
   font-size: 18px;
   line-height: 1.6;
@@ -26,7 +21,7 @@ div.col-md-4.article{
 }
 
 .card-title{
-  color: #B54574;
+  color: var(--font-color);
   font-size: 25px;
   margin-top: 30px;
 }

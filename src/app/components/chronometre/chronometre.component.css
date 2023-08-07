@@ -7,6 +7,6 @@ button{
 
 .record{
     width: auto;
-    background-color: #6B2D5C;
+    background-color: var(--titre-font-color);
     color: white;
 }
