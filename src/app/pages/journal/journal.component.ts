@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Technique } from 'src/app/models/technique';
 import { TechniqueService } from 'src/app/services/technique.service';
 
+
 @Component({
   selector: 'app-journal',
   templateUrl: './journal.component.html',
@@ -64,5 +65,7 @@ export class JournalComponent {
 
 
 
+  chronometerHours: number = 0;
 
 }
+

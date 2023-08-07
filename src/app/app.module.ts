@@ -25,6 +25,7 @@ import { ModalModule} from 'ngx-bootstrap/modal';
 import { ModalInscriptionComponent } from './components/modal-inscription/modal-inscription.component';
 import { MeditationDetailComponent } from './pages/meditation-detail/meditation-detail.component';
 import { ChronometreComponent } from './components/chronometre/chronometre.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ChronometreComponent } from './components/chronometre/chronometre.compo
     HttpClientModule,
     FormsModule,
     ModalModule.forRoot(),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

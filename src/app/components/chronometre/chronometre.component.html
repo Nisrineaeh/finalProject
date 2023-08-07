@@ -5,6 +5,6 @@
 <button (click)="startTimer()">Start</button>
 <button (click)="stopTimer()">Stop</button>
 <button (click)="resetTimer()">Reset</button>
-<button (click)="recordingTime()">Retenir son temps</button>
+<button (click)="recordingTime()" class="record">Retenir son temps</button>
+<ul><li *ngFor="let time of recordingTimes">{{getFormattedTimes(time)}}</li></ul>
 </div>
-<div><ul><li *ngFor="let time of recordingTimes">{{getFormattedTimes(time)}}</li></ul></div>

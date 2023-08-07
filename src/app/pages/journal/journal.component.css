@@ -12,7 +12,7 @@
 }
 
 .btn{
-    border: 2px solid #B54574;
+    border: 2px solid var(--font-color);
 
 }
 
@@ -22,7 +22,7 @@ textarea{
 }
 
 h3{
-    color:#6B2D5C;
+    color:var(--titre-font-color);
     display: flex;
     justify-content: center;
 }
@@ -36,11 +36,11 @@ li{
 }
 
 label{
-    color:#7C0033;
+    color:var(--titre-font-color);
 }
 
 h5{
-    color:#b54574;
+    color:var(--titre-font-color);
 }
 
 .rep{
@@ -48,14 +48,14 @@ h5{
 }
 
 button{
-    color: #B54574;
+    color: var(--font-color);
 }
 button:hover{
-    background-color: #B54574;
+    background-color: var(--font-color);
     color: white;
 }
 
 .ressentis{
-    border: 1px solid black;
+    border: 1px dotted var(--font-color);
     width: auto;
 }

@@ -5,3 +5,9 @@
   box-sizing: border-box;
   overflow-x: hidden;
 } */
+
+:root {
+  --font-color: #b54574;
+  --titre-font-color: #7C0033;
+  --bgcolor: #FDECEF;
+}

@@ -18,7 +18,7 @@ h3{
     display: flex;
     justify-content: center;
     padding: 20px;
-    color:#6B2D5C;
+    color:var(--titre-font-color);
 
 }
 
@@ -34,5 +34,5 @@ ul{
 
 *{
 
-    background-color: #FDECEF;
+    background-color: var(--bgcolor);
 }

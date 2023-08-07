@@ -29,15 +29,15 @@
   min-height: 170px;
 }
 .svgcontainer svg#fourohfour .st0 {
-  fill: #FFB366;
+  fill: var(--font-color);
 }
 
 .svgcontainer svg#fourohfour .st1 {
-  fill: #e9a35c;
+  fill: var(--titre-font-color);
 }
 
 .svgcontainer svg#fourohfour .st2 {
-  fill: #e8f8bb;
+  fill: var(--bgcolor);
 }
 
 svg#swipe {
@@ -63,25 +63,7 @@ svg#picklerick {
   animation: popup 1s 5s forwards;
 }
 
-svg#picklerick .st0 {
-  fill: #fefefe;
-}
 
-svg#picklerick .st1 {
-  fill: #0d130c;
-}
-
-svg#picklerick .st2 {
-  fill: #4e8025;
-}
-
-svg#picklerick .st3 {
-  fill: #669b2e;
-}
-
-svg#picklerick .st4 {
-  fill: #e5f8d3;
-}
 
 
 @media only screen and (max-height: 420px) {

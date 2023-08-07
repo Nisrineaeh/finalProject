@@ -3,12 +3,12 @@ h1{
     justify-content: center;
     padding: 20px;
     margin-bottom: 50px;
-    color:#6B2D5C;
+    color:var(--titre-font-color);
 
 }
 
 *{
-     background-color: #FDECEF;
+     background-color: var(--bgcolor);
 }
 
 .medit{
