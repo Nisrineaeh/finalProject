@@ -1,7 +1,9 @@
 <div class="chrono">
-    {{formattedTime}}
-</div>
+{{ getFormattedTime()}}
 
-<button (click)="onStartClick()">Start</button>
-<button (click)="onStopClick()">Stop</button>
-<button (click)="onResetClick()">Reset</button>
+
+<button (click)="startTimer()">Start</button>
+<button (click)="stopTimer()">Stop</button>
+<button (click)="resetTimer()">Reset</button>
+
+</div>
