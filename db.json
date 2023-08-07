@@ -16,7 +16,8 @@
         "description":
           "Méditation pour explorer l'univers intérieur et se connecter à l'infini.",
         "duration": "20 minutes",
-        "images": "/assets/etoile.jpg"
+        "images": "/assets/etoile.jpg",
+        "audio":"/assets/audio/Cosmique.mp3"
       },
       {
         "id": 3,
@@ -25,7 +26,8 @@
         "description":
           "Méditation pour se détacher du numérique et retrouver le calme intérieur.",
         "duration": "10 minutes",
-        "images": "/assets/détox.jpg"
+        "images": "/assets/détox.jpg",
+        "audio":"/assets/audio/Détox.mp3"
       },
       {
         "id": 4,
@@ -34,7 +36,8 @@
         "description":
           "Méditation pour se ressourcer au cœur d'une forêt enchantée et magique.",
         "duration": "25 minutes",
-        "images": "/assets/enchante.jpg"
+        "images": "/assets/enchante.jpg",
+        "audio":"/assets/audio/Foret.mp3"
       },
       {
         "id": 5,
@@ -43,7 +46,8 @@
         "description":
           "Méditation pour respirer correctement et plonger au cœur des abysses marins.",
         "duration": "22 minutes",
-        "images": "/assets/ocean.jpg"
+        "images": "/assets/ocean.jpg",
+        "audio": "/assets/audio/Eau.mp3"
       },
       {
         "id": 6,
@@ -52,6 +56,7 @@
         "description":
           "Méditation pour stimuler la créativité et libérer son potentiel artistique.",
         "duration": "30 minutes",
-        "images": "/assets/creativite.jpg"
+        "images": "/assets/creativite.jpg",
+        "audio":"/assets/audio/Creativité.mp3"
       }
 ]}

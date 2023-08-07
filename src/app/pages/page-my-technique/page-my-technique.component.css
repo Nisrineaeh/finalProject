@@ -10,3 +10,11 @@ h1{
 *{
      background-color: #FDECEF;
 }
+
+.medit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 12rem;
+    padding-right: 5rem;
+}
