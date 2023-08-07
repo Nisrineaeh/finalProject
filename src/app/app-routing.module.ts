@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { RedirectComponent } from './pages/redirect/redirect.component';
+import { MeditationDetailComponent } from './pages/meditation-detail/meditation-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: "full" },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path:'connexion', component: ConnexionComponent},
   { path: 'inscription', component: InscriptionComponent },
   {path:'redirect', component: RedirectComponent},
+  {path: 'meditation/:id', component: MeditationDetailComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 

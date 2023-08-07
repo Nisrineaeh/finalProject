@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ModalModule} from 'ngx-bootstrap/modal';
 import { ModalInscriptionComponent } from './components/modal-inscription/modal-inscription.component';
+import { MeditationDetailComponent } from './pages/meditation-detail/meditation-detail.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ModalInscriptionComponent } from './components/modal-inscription/modal-
     BtnInscriptionComponent,
     NoteComponent,
     RedirectComponent,
-    ModalInscriptionComponent
+    ModalInscriptionComponent,
+    MeditationDetailComponent
   ],
   imports: [
     BrowserModule,
