@@ -12,7 +12,7 @@ import * as bcrypt from 'bcrypt';
   providedIn: 'root'
 })
 export class UtilisateursService {
-  private bddUrl = 'http://localhost:8080/utilisateurs';
+  private bddUrl = 'http://localhost:8080/api/utilisateurs';
   
   constructor(private http: HttpClient) { }
 
