@@ -39,20 +39,20 @@ audio{
 
 
 .keyword-animation:nth-child(1) {
-  bottom: 850px; /* Ajustez cette valeur pour le positionnement vertical */
+  bottom: 800px; /* Ajustez cette valeur pour le positionnement vertical */
 }
 
 .keyword-animation:nth-child(2) {
-  bottom: 750px; /* Ajustez cette valeur pour le positionnement vertical */
+  bottom: 700px; /* Ajustez cette valeur pour le positionnement vertical */
 }
 .keyword-animation:nth-child(3) {
-  bottom: 650px; /* Ajustez cette valeur pour le positionnement vertical */
+  bottom: 600px; /* Ajustez cette valeur pour le positionnement vertical */
 }
 .keyword-animation:nth-child(4) {
-  bottom: 550px; /* Ajustez cette valeur pour le positionnement vertical */
+  bottom: 500px; /* Ajustez cette valeur pour le positionnement vertical */
 }
 .keyword-animation:nth-child(5) {
-  bottom: 450px; /* Ajustez cette valeur pour le positionnement vertical */
+  bottom: 400px; /* Ajustez cette valeur pour le positionnement vertical */
 }
 
 @keyframes fadeInUp {
@@ -96,4 +96,9 @@ audio{
     transform: translateX(-50%);
     font-size: 20px;
   }
+}
+
+.keyword-animation{
+  color: var(--font-color);
+  font-size: 50px;
 }
