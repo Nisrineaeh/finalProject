@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Utilisateur } from '../models/utilisateur';
 
 import * as bcrypt from 'bcrypt';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 
 
@@ -14,7 +15,8 @@ import * as bcrypt from 'bcrypt';
 export class UtilisateursService {
   private bddUrl = 'http://localhost:8080/api/utilisateurs';
   
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    private jwtHelper: JwtHelperService) { }
 
   getAllUtilisateurs(): Observable<Utilisateur[]>{
     return this.http.get<Utilisateur[]>(this.bddUrl);
@@ -33,6 +35,10 @@ export class UtilisateursService {
 
   suppUtilisateur (id:number): Observable<void>{
     return this.http.delete<void>(this.bddUrl);
+  }
+
+  findByEmail(email: string): Observable<Utilisateur | null> {
+    return this.http.get<Utilisateur>(`${this.bddUrl}/findByEmail/${email}`);
   }
 
   // async verifierConnexion(email: string, motDePasse: string): Promise<boolean> {
